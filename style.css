@@ -1,0 +1,17 @@
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1, h2 {
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav-link.active {
+        font-weight: bold;
+    }
+

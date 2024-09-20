@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        .hero {
+            background: url('./images/Black White Grayscale Portfolio Presentation.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .hero a {
+            margin: 0 10px;
+        }
+
+        .about img {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .services h4 {
+            margin-top: 15px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .services p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body h5 {
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #0056b3;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 15px 20px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #004085;
+        }
+        .card img {
+        width: 100%;
+        height: 200px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Ensures the image covers the container without distortion */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .about img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">Ndou Gundo</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>About Me</h2>
+                        <p>I am a dedicated Level 5 System Development student with a passion for computer skills and software development. I'm focused on mastering computer repair, network installation, C# .NET, Java, SQL, HTML, CSS, and JavaScript. My goal is to leverage these skills to create innovative and efficient systems that make a significant impact in the tech world.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/WhatsApp Image 2024-06-24 at 16.58.20.jpeg" alt="About Me" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bi bi-laptop fs-1 mb-3"></i>
+                    <h4>Web Development</h4>
+                    <p>Creating responsive and user-friendly websites.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-brush fs-1 mb-3"></i>
+                    <h4>Graphic Design</h4>
+                    <p>Designing logos, brochures, and other graphics.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-gear fs-1 mb-3"></i>
+                    <h4>Software Development</h4>
+                    <p>Building custom software solutions to meet your needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-android fs-1 mb-3"></i>
+                    <h4>Mobile App Development</h4>
+                    <p>Creating intuitive and feature-rich Mobile applications.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-tools fs-1 mb-3"></i>
+                    <h4>Computer Repair</h4>
+                    <p>Providing expert computer repair and maintenance services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/food_instagram_story_23.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Flayer</h5>
+                            <p class="card-text">Food Flayer is your ultimate flayer designed using Photoshop.</p>
+                            <a href="project.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/Untitled.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Afri-go shuttle website</h5>
+                            <p class="card-text">Afri-go shuttle website created using Html css JavaScript and bootstrap.</p>
+                            <a href="project.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/attenden.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Attendance Tracker Pro.</h5>
+                            <p class="card-text">
+                                The attendance management application is a user-friendly tool designed to efficiently track employee attendance, manage work hours, and calculate payments for both regular and overtime work. It features a date picker for easy date selection, input fields for employee names, and checkboxes to log hours worked, with automatic calculations displaying total regular and overtime payments. The application ensures accurate payroll processing, enhances record-keeping, and allows for easy reporting, all while providing intuitive navigation for users. With ongoing support and maintenance options, this application offers
+                                 a comprehensive solution to streamline attendance management and improve overall efficiency in the workplace.</p>
+                            <a href="Attendance Tracker.zip" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <iframe src="https://whatsform.com/kwziwg" width="100%" height="600" frameborder="0"></iframe>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ndou Gundo. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
